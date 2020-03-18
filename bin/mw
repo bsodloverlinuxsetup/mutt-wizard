@@ -37,8 +37,10 @@ getprofiles() { \
 msmtp_header="defaults
 auth	on
 tls	on
+tls_starttls	off
 tls_trust_file	$sslcert
 logfile	~/.config/msmtp/msmtp.log
+
 "
 msmtp_profile="account $title
 host $smtp
